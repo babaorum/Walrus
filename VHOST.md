@@ -1,12 +1,30 @@
 VHOST :
 
+<<<<<<< HEAD
   $ sudo nano /etc/apache2/sites-available/walrus.dev
+=======
+<<<<<<< HEAD
+  $ sudo nano /etc/apache2/sites-available/walrus
+=======
+  $ sudo nano /etc/apache2/sites-available/walrus.dev
+>>>>>>> develop
+>>>>>>> 697477664f275c75f8bbab0e6a558d68da270038
 
 
 	<VirtualHost *:80>
                 ServerAdmin webmaster@localhost
+<<<<<<< HEAD
                 ServerName walrus.dev
                 ServerAlias www.walrus.dev
+=======
+<<<<<<< HEAD
+
+                ServerName walrus
+=======
+                ServerName walrus.dev
+                ServerAlias www.walrus.dev
+>>>>>>> develop
+>>>>>>> 697477664f275c75f8bbab0e6a558d68da270038
 
                 DocumentRoot /var/www/Walrus
                 <Directory /var/www/Walrus>
@@ -16,6 +34,17 @@ VHOST :
                         allow from all
                 </Directory>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                # Chroot PHP script to this path
+                php_admin_value open_basedir "/var/www/Walrus"
+                # Tmp upload directory
+                php_admin_value upload_tmp_dir "/var/www/Walrus/tmp"
+
+=======
+>>>>>>> develop
+>>>>>>> 697477664f275c75f8bbab0e6a558d68da270038
                 ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 
                 ErrorLog ${APACHE_LOG_DIR}/error.log
@@ -29,7 +58,15 @@ VHOST :
 
 ___
 
+<<<<<<< HEAD
 	$ sudo a2ensite walrus.dev
+=======
+<<<<<<< HEAD
+	$ sudo a2ensite walrus
+=======
+	$ sudo a2ensite walrus.dev
+>>>>>>> develop
+>>>>>>> 697477664f275c75f8bbab0e6a558d68da270038
 	$ sudo service apache2 reload
 
 ___
@@ -40,4 +77,12 @@ Host to add (Windows ou Mac) AND VM :
 
 path VM :
 
+<<<<<<< HEAD
     sudo nano /etc/hosts
+=======
+<<<<<<< HEAD
+    sudo nano /etc/hosts
+=======
+    sudo nano /etc/hosts
+>>>>>>> develop
+>>>>>>> 697477664f275c75f8bbab0e6a558d68da270038

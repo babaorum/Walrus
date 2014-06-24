@@ -5,3 +5,6 @@ Thumbs.db
 #Walrus
 tmp/*
 config/compiled/
+
+#JetBrains IDE
+.idea/
